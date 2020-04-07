@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_8a5ea85a924f4611873e6a88b055b60b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8a5ea85a924f4611873e6a88b055b60b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_8a5ea85a924f4611873e6a88b055b60b = L.map(
+                                  'map_8a5ea85a924f4611873e6a88b055b60b',
+                                  {center: [-25.589364,-54.5902],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_49a6bebb997f4ad5b8ed571ee94dadb7 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_8a5ea85a924f4611873e6a88b055b60b);
+        
+    
+
+            var marker_5c620e4855024b32be9269c0c931bb97 = L.marker(
+                [-25.589364,-54.5902],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_8a5ea85a924f4611873e6a88b055b60b);
+            
+    
+            var popup_928c91a36fea4cc2adeb8595bb7e5c15 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6e63e7235614e77b063bae15ebfc36b = $('<div id="html_e6e63e7235614e77b063bae15ebfc36b" style="width: 100.0%; height: 100.0%;">Triple Frontera</div>')[0];
+                popup_928c91a36fea4cc2adeb8595bb7e5c15.setContent(html_e6e63e7235614e77b063bae15ebfc36b);
+            
+
+            marker_5c620e4855024b32be9269c0c931bb97.bindPopup(popup_928c91a36fea4cc2adeb8595bb7e5c15);
+
+            
+        
+    
+            var layer_control_9e2d19a3d034412e841ab6eb28a30ba9 = {
+                base_layers : { "openstreetmap" : tile_layer_49a6bebb997f4ad5b8ed571ee94dadb7, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_9e2d19a3d034412e841ab6eb28a30ba9.base_layers,
+                layer_control_9e2d19a3d034412e841ab6eb28a30ba9.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_8a5ea85a924f4611873e6a88b055b60b);
+        
+</script>
